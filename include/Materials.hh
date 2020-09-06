@@ -367,7 +367,7 @@ class Materials
       PVT_MPT->AddProperty("ABSLENGTH", photonEnergy, absorptionPlastic, numEntries); 
       PVT_MPT->AddProperty("FASTCOMPONENT",photonEnergy, fastComponentPlastic, numEntries);
       //add a slow compontent at some point
-      PVT_MPT->AddConstProperty("SCINTILLATIONYIELD",100./MeV);//10000./MeV);
+      PVT_MPT->AddConstProperty("SCINTILLATIONYIELD",10000./MeV);//10000./MeV);
       PVT_MPT->AddConstProperty("RESOLUTIONSCALE",1.0);    
       PVT_MPT->AddConstProperty("FASTTIMECONSTANT", 2.1*ns);    
       PVT_MPT->AddConstProperty("YIELDRATIO",1.);
